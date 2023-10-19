@@ -1,2 +1,2 @@
-public class Helicopter {
+public class Helicopter extends AirTransportation {
 }

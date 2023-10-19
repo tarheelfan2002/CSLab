@@ -1,2 +1,2 @@
-public class WaterTransportation {
+public class WaterTransportation extends Transportation {
 }

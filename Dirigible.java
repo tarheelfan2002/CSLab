@@ -1,2 +1,2 @@
-public class Dirigible {
+public class Dirigible extends AirTransportation {
 }

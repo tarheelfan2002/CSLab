@@ -1,2 +1,2 @@
-public class Automobile {
+public class Automobile extends LandTransportation {
 }

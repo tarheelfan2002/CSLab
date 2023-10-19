@@ -1,2 +1,2 @@
-public class HotAirBalloon {
+public class HotAirBalloon extends AirTransportation {
 }

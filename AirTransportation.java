@@ -1,2 +1,2 @@
-public class AirTransportation {
+public class AirTransportation extends Transportation {
 }
