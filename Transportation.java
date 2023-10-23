@@ -41,6 +41,10 @@ public class Transportation {
         return price;
     }
 
+    public String getServiceType() {
+        return serviceType;
+    }
+
     public double getSpeed() {
         return speed;
     }
