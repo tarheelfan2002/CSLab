@@ -48,38 +48,53 @@ public class Transportation {
     }
 
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
     public String getServiceType() {
-        return serviceType;
+        return this.serviceType;
     }
 
     public double getSpeed() {
-        return speed;
+        return this.speed;
     }
 
     public int getPassengerSpace() {
-        return passengerSpace;
+        return this.passengerSpace;
     }
 
     public int getTravelTimeMins() {
-        return travelTimeMins;
+        return this.travelTimeMins;
     }
 
     public String getLocation() {
-        return location;
+        return this.location;
     }
 
     public String getPickupTime() {
-        return pickupTime;
+        return this.pickupTime;
     }
 
     public String getTerrain() {
-        return terrain;
+        return this.terrain;
     }
 
     public String[] getOptions() {
-        return options;
+        return this.options;
+    }
+
+    public String toString() {
+        return String.format(
+                "Vehicle type: %s\nRental or ticket: %s\nPrice: %f\nSpots available %d\nSpeed: %f\nTerrain: %s\nLocation: %s\nPickup time: %s\nMinutes of travel time: %d\n",
+                this.getVehicleType(),
+                this.getServiceType(),
+                this.getPrice(),
+                this.getPassengerSpace(),
+                this.getSpeed(),
+                this.getTerrain(),
+                this.getLocation(),
+                this.getPickupTime(),
+                this.getTravelTimeMins()
+        );
     }
 }
