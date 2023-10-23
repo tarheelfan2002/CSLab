@@ -1,4 +1,6 @@
 public class Transportation {
+
+    private String vehicleType;
     private String[] options;
     private String serviceType;
     private double price;
@@ -8,6 +10,10 @@ public class Transportation {
     private String location;
     private String pickupTime;
     private int travelTimeMins;
+
+    public void setVehicleType(String vehicleType) {
+        this.vehicleType = vehicleType;
+    }
 
     public void setServiceType(String serviceType) {
         this.serviceType = serviceType;
@@ -35,6 +41,10 @@ public class Transportation {
 
     public void setTravelTimeMins(int travelTimeMins) {
         this.travelTimeMins = travelTimeMins;
+    }
+
+    public String getVehicleType() {
+        return this.vehicleType;
     }
 
     public double getPrice() {
