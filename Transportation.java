@@ -1,7 +1,6 @@
 public class Transportation {
     private String[] options;
-    private boolean rental;
-    private boolean ticketed;
+    private String serviceType;
     private double price;
     private int passengerSpace;
     private double speed;
@@ -10,12 +9,8 @@ public class Transportation {
     private String pickupTime;
     private int travelTimeMins;
 
-    public void setRental(boolean rental) {
-        this.rental = rental;
-    }
-
-    public void setTicketed(boolean ticketed) {
-        this.ticketed = ticketed;
+    public void setServiceType(String serviceType) {
+        this.serviceType = serviceType;
     }
 
     public void setPrice(double price) {
