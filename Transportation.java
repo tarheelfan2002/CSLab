@@ -97,4 +97,11 @@ public class Transportation {
                 this.getTravelTimeMins()
         );
     }
+
+    public void showOptions() {
+        System.out.println("Vehicle options:\n");
+        for (String option : this.getOptions()) {
+            System.out.printf("%s\n", option);
+        }
+    }
 }
