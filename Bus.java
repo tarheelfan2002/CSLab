@@ -25,4 +25,18 @@ public class Bus extends LandTransportation {
                 this.getFloorCount()
         );
     }
+
+    Bus(double price, int passengerSpace, double speed, String location, String pickupTime, int travelTime) {
+        this.setVehicleType("Bus");
+        this.setServiceType("Ticket");
+        this.setPrice(price);
+        this.setPassengerSpace(passengerSpace);
+        this.setSpeed(speed);
+        this.setTerrain("Land");
+        this.setLocation(location);
+        this.setPickupTime(pickupTime);
+        this.setTravelTimeMins(travelTime);
+        this.setWheelCount(4);
+        this.setFloorCount(2);
+    }
 }

@@ -1,7 +1,6 @@
 public class Transportation {
 
     private String vehicleType;
-    private String[] options;
     private String serviceType;
     private double price;
     private int passengerSpace;
@@ -33,6 +32,10 @@ public class Transportation {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public void setTerrain(String location) {
+        this.terrain = terrain;
     }
 
     public void setPickupTime(String pickupTime) {
@@ -79,10 +82,6 @@ public class Transportation {
         return this.terrain;
     }
 
-    public String[] getOptions() {
-        return this.options;
-    }
-
     public String toString() {
         return String.format(
                 "Vehicle type: %s\nRental or ticket: %s\nPrice: %f\nSpots available %d\nSpeed: %f\nTerrain: %s\nLocation: %s\nPickup time: %s\nMinutes of travel time: %d\n",
@@ -96,12 +95,5 @@ public class Transportation {
                 this.getPickupTime(),
                 this.getTravelTimeMins()
         );
-    }
-
-    public void showOptions() {
-        System.out.println("Vehicle options:\n");
-        for (String option : this.getOptions()) {
-            System.out.printf("%s\n", option);
-        }
     }
 }

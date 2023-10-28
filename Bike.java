@@ -25,4 +25,18 @@ public class Bike extends LandTransportation {
                 this.getGearCount()
         );
     }
+
+    Bike(double price, int passengerSpace, double speed, String location, String pickupTime, int travelTime) {
+        this.setVehicleType("Bike");
+        this.setServiceType("Rental");
+        this.setPrice(price);
+        this.setPassengerSpace(passengerSpace);
+        this.setSpeed(speed);
+        this.setTerrain("Land");
+        this.setLocation(location);
+        this.setPickupTime(pickupTime);
+        this.setTravelTimeMins(travelTime);
+        this.setWheelCount(2);
+        this.setGearCount(9);
+    }
 }

@@ -1,8 +1,8 @@
 public class Train extends LandTransportation {
     public int carriageCount;
 
-    public void setCarriageCount(int wheelCount) {
-        this.carriageCount = wheelCount;
+    public void setCarriageCount(int carriageCount) {
+        this.carriageCount = carriageCount;
     }
 
     public int getCarriageCount() {
@@ -24,5 +24,19 @@ public class Train extends LandTransportation {
                 this.getWheelCount(),
                 this.getCarriageCount()
         );
+    }
+
+    Train(double price, int passengerSpace, double speed, String location, String pickupTime, int travelTime) {
+        this.setVehicleType("Train");
+        this.setServiceType("Ticket");
+        this.setPrice(price);
+        this.setPassengerSpace(passengerSpace);
+        this.setSpeed(speed);
+        this.setTerrain("Land");
+        this.setLocation(location);
+        this.setPickupTime(pickupTime);
+        this.setTravelTimeMins(travelTime);
+        this.setWheelCount(18);
+        this.setCarriageCount(3);
     }
 }

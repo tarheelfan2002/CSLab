@@ -25,4 +25,18 @@ public class Boat extends WaterTransportation {
                 this.getMovementType()
         );
     }
+
+    Boat(double price, int passengerSpace, double speed, String location, String pickupTime, int travelTime) {
+        this.setVehicleType("Boat");
+        this.setServiceType("Rental");
+        this.setPrice(price);
+        this.setPassengerSpace(passengerSpace);
+        this.setSpeed(speed);
+        this.setTerrain("Water");
+        this.setLocation(location);
+        this.setPickupTime(pickupTime);
+        this.setTravelTimeMins(travelTime);
+        this.setDepth(0);
+        this.setMovementType("Oars");
+    }
 }

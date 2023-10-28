@@ -25,4 +25,18 @@ public class Helicopter extends AirTransportation {
                 this.getBladeCount()
         );
     }
+
+    Helicopter(double price, int passengerSpace, double speed, String location, String pickupTime, int travelTime) {
+        this.setVehicleType("Helicopter");
+        this.setServiceType("Rental");
+        this.setPrice(price);
+        this.setPassengerSpace(passengerSpace);
+        this.setSpeed(speed);
+        this.setTerrain("Air");
+        this.setLocation(location);
+        this.setPickupTime(pickupTime);
+        this.setTravelTimeMins(travelTime);
+        this.setElevation(500);
+        this.setBladeCount(4);
+    }
 }
